@@ -1,0 +1,196 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local MODMENU = Instance.new("ScreenGui")
+local HUD = Instance.new("Frame")
+local Scroll = Instance.new("ScrollingFrame")
+local Jogos = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Hubs = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Universal = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local AzureMines = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Scroll2 = Instance.new("ScrollingFrame")
+local credits = Instance.new("TextLabel")
+local Line = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Line2 = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Search = Instance.new("TextBox")
+local UICorner_7 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UICorner_8 = Instance.new("UICorner")
+local PressUforclose = Instance.new("TextLabel")
+
+--Properties:
+
+MODMENU.Name = "MOD MENU"
+MODMENU.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MODMENU.Enabled = false
+MODMENU.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+HUD.Name = "HUD"
+HUD.Parent = MODMENU
+HUD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HUD.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HUD.BorderSizePixel = 0
+HUD.Position = UDim2.new(0.17274189, 0, 0.104330711, 0)
+HUD.Size = UDim2.new(0, 641, 0, 402)
+
+Scroll.Name = "Scroll"
+Scroll.Parent = HUD
+Scroll.Active = true
+Scroll.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+Scroll.BackgroundTransparency = 0.900
+Scroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scroll.BorderSizePixel = 0
+Scroll.Position = UDim2.new(0, 0, 0.189614922, 0)
+Scroll.Size = UDim2.new(0, 219, 0, 324)
+Scroll.ScrollBarThickness = 8
+
+Jogos.Name = "Jogos"
+Jogos.Parent = Scroll
+Jogos.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Jogos.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Jogos.BorderSizePixel = 0
+Jogos.Position = UDim2.new(0.0558139533, 0, 0.025607435, 0)
+Jogos.Size = UDim2.new(0, 191, 0, 44)
+Jogos.Font = Enum.Font.GothamBold
+Jogos.Text = "Jogos"
+Jogos.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jogos.TextSize = 20.000
+Jogos.TextWrapped = true
+
+UICorner.Parent = Jogos
+
+Hubs.Name = "Hubs"
+Hubs.Parent = Scroll
+Hubs.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Hubs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hubs.BorderSizePixel = 0
+Hubs.Position = UDim2.new(0.0558139533, 0, 0.0900512487, 0)
+Hubs.Size = UDim2.new(0, 191, 0, 44)
+Hubs.Font = Enum.Font.GothamBold
+Hubs.Text = "Hubs"
+Hubs.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hubs.TextSize = 20.000
+Hubs.TextWrapped = true
+
+UICorner_2.Parent = Hubs
+
+Universal.Name = "Universal"
+Universal.Parent = Scroll
+Universal.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Universal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Universal.BorderSizePixel = 0
+Universal.Position = UDim2.new(0.0558139533, 0, 0.157128766, 0)
+Universal.Size = UDim2.new(0, 191, 0, 44)
+Universal.Font = Enum.Font.GothamBold
+Universal.Text = "Universal"
+Universal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Universal.TextSize = 20.000
+Universal.TextWrapped = true
+
+UICorner_3.Parent = Universal
+
+AzureMines.Name = "AzureMines"
+AzureMines.Parent = Scroll
+AzureMines.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+AzureMines.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AzureMines.BorderSizePixel = 0
+AzureMines.Position = UDim2.new(0.0606217012, 0, 0.0250797849, 0)
+AzureMines.Size = UDim2.new(0, 356, 0, 44)
+AzureMines.Font = Enum.Font.GothamBold
+AzureMines.Text = "Azure Mines (90467)"
+AzureMines.TextColor3 = Color3.fromRGB(255, 255, 255)
+AzureMines.TextSize = 20.000
+AzureMines.TextWrapped = true
+
+UICorner_4.Parent = AzureMines
+
+Scroll2.Name = "Scroll2"
+Scroll2.Parent = HUD
+Scroll2.Active = true
+Scroll2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scroll2.BackgroundTransparency = 1.000
+Scroll2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scroll2.BorderSizePixel = 0
+Scroll2.Position = UDim2.new(0.351013899, 0, 0.18462272, 0)
+Scroll2.Size = UDim2.new(0, 416, 0, 326)
+Scroll2.ScrollBarThickness = 8
+
+credits.Name = "credits"
+credits.Parent = HUD
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 1.000
+credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+credits.BorderSizePixel = 0
+credits.Position = UDim2.new(0.0320720226, 0, 0.0299531985, 0)
+credits.Size = UDim2.new(0, 174, 0, 36)
+credits.Font = Enum.Font.GothamBold
+credits.Text = "TX - Menu V1"
+credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+credits.TextScaled = true
+credits.TextSize = 14.000
+credits.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+credits.TextWrapped = true
+
+Line.Name = "Line"
+Line.Parent = HUD
+Line.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
+Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, 0.189614877, 0)
+Line.Size = UDim2.new(0, 641, 0, -2)
+
+UICorner_5.Parent = Line
+
+Line2.Name = "Line2"
+Line2.Parent = HUD
+Line2.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
+Line2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line2.BorderSizePixel = 0
+Line2.Position = UDim2.new(0.338533551, 0, 0.0049921996, 0)
+Line2.Size = UDim2.new(0, 2, 0, 73)
+
+UICorner_6.Parent = Line2
+
+Search.Name = "Search"
+Search.Parent = HUD
+Search.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Search.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Search.BorderSizePixel = 0
+Search.Position = UDim2.new(0.360374421, 0, 0.0299531985, 0)
+Search.Size = UDim2.new(0, 396, 0, 50)
+Search.Font = Enum.Font.GothamBold
+Search.Text = "Search here"
+Search.TextColor3 = Color3.fromRGB(255, 255, 255)
+Search.TextSize = 14.000
+
+UICorner_7.Parent = Search
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(29, 29, 29)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(29, 29, 29))}
+UIGradient.Parent = HUD
+
+UIAspectRatioConstraint.Parent = HUD
+UIAspectRatioConstraint.AspectRatio = 1.600
+
+UICorner_8.Parent = HUD
+
+PressUforclose.Name = "Press U for close"
+PressUforclose.Parent = HUD
+PressUforclose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PressUforclose.BackgroundTransparency = 1.000
+PressUforclose.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PressUforclose.BorderSizePixel = 0
+PressUforclose.Position = UDim2.new(0.0124804992, 0, 0.0624024943, 0)
+PressUforclose.Size = UDim2.new(0, 200, 0, 50)
+PressUforclose.Font = Enum.Font.SourceSansBold
+PressUforclose.Text = "APERTE U PARA MINIMIZAR"
+PressUforclose.TextColor3 = Color3.fromRGB(255, 102, 0)
+PressUforclose.TextSize = 14.000
